@@ -1,2 +1,13 @@
 # adding books folder
 /books
+
+# ignore some automatic files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.python-version
+.venv/
+venv/
+.env
