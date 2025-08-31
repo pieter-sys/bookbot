@@ -1,4 +1,4 @@
-from stats import word_counting
+from stats import word_counting, char_counting
 
 # takes a filepath as input and returns the contents of the file as a string
 def get_book_text(path):
@@ -10,6 +10,8 @@ def get_book_text(path):
 def main():
     textbulk = get_book_text("./books/frankenstein.txt")
     num_words = word_counting(textbulk)
+    num_chars = char_counting(textbulk)
     print(f"{num_words} words found in the document")
+    print(num_chars)
 
 main()
